@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nelly · 50 años</title>
+<meta name="description" content="Estás invitado a celebrar los 50 años de Nelly.">
+<meta property="og:title" content="Nelly · 50 años">
+<meta property="og:description" content="Una celebración especial. Abre tu invitación.">
+<meta name="theme-color" content="#f4ead8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Montserrat:wght@400;500&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="cerrada">
+
+<!-- Recursos gráficos compartidos (degradados dorado/hojas y sombra de las flores). Las flores se dibujan en script.js -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <linearGradient id="oroG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f0d9a8"/><stop offset=".5" stop-color="#b98a45"/><stop offset="1" stop-color="#e6c88f"/></linearGradient>
+  <linearGradient id="hoja" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2f5a35"/><stop offset="1" stop-color="#6f9a62"/></linearGradient>
+</defs></svg>
+
+<!-- ============ 1. PORTADA ============ -->
+<section id="portada" class="portada">
+  <div class="destellos" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="centro">
+    <p class="cursiva mini">Estás invitado a celebrar</p>
+    <!-- FOTO PRINCIPAL: reemplaza assets/nelly-principal.jpg (sin foto se ve un óvalo provisional) -->
+    <div class="retrato" id="retrato">
+      <img src="assets/nelly-principal.jpg" alt="Nelly" id="fotoPrincipal">
+      <span class="inicial" aria-hidden="true">N</span>
+    </div>
+  
+    <h1 class="nombre cursiva">Nelly</h1>
+    <p class="cincuenta"><span></span>50 años<span></span></p>
+    <br><br>
+    <button class="boton" id="abrir" type="button">Abrir invitación</button>
+  </div>
+</section>
+
+<main id="contenido" aria-hidden="true">
+
+<!-- ============ 2. MENSAJE ============ -->
+<section class="seccion mensaje">
+  <p class="cursiva sub reveal">Queridos familiares y amigos</p>
+  <div class="perlas reveal" aria-hidden="true"></div>
+  <!-- TEXTO DE LA INVITACIÓN: edita las frases aquí -->
+  <p class="serif texto reveal">Este año cumplo 50, y quiero celebrarlo rodeada de las personas que hacen mi vida más linda.</p>
+  <p class="serif texto reveal">Será una noche de cena, música y baile, para compartir con alegría y gratitud.</p>
+  <p class="serif texto reveal">Me haría muy feliz que me acompañes.</p>
+  
+</section>
+<!-- FOTO 1: después del mensaje -->
+<figure class="foto-integrada vertical reveal" data-foto="0">
+  <img src="assets/galeria-1.jpg" alt="Fotografía de Nelly" loading="lazy">
+</figure>
+<!-- ============ 3. EVENTO ============ -->
+<section class="seccion evento">
+  <div class="panel reveal">
+    <p class="dato">Viernes</p>
+    <p class="fecha serif">20 de noviembre de 2026</p>
+    <p class="dato">6:30 p. m.</p>
+    <svg class="flor-div" viewBox="0 0 200 20" aria-hidden="true"><path d="M4 10C40 10 62 3 92 10Q100 15 108 10C138 3 160 10 196 10" fill="none" stroke="url(#oroG)" stroke-width="1.3"/><rect x="96" y="6" width="8" height="8" transform="rotate(45 100 10)" fill="#e6c88f"/></svg>
+    <p class="lugar serif">Fina Estampa</p>
+    <p class="dato">Salón de Eventos y Recepciones</p>
+    <a class="boton claro" id="btnMapa" href="#" target="_blank" rel="noopener">Ver ubicación</a>
+  </div>
+</section>
+<!-- FOTO 2: después del evento -->
+<figure class="foto-integrada horizontal reveal" data-foto="1">
+  <img src="assets/galeria-2.jpg" alt="Fotografía de Nelly" loading="lazy">
+</figure>
+<!-- ============ 4. CONFIRMACIÓN ============ -->
+<section class="seccion confirma">
+  <p class="cursiva sub reveal">Cuento contigo</p>
+  <a class="boton" id="btnWhatsapp" href="#" target="_blank" rel="noopener">Confirmar asistencia</a>
+  <p class="nota reveal">Esta invitación es personal. Agradeceremos confirmar tu asistencia con anticipación.</p>
+</section>
+<!-- FOTO 3: después de la confirmación -->
+<figure class="foto-integrada vertical reveal" data-foto="2">
+  <img src="assets/galeria-3.jpg" alt="Fotografía de Nelly" loading="lazy">
+</figure>
+<!-- ============ 5. PUNTUALIDAD ============ -->
+<section class="seccion puntual">
+  <div class="perlas reveal" aria-hidden="true"></div>
+  <p class="serif texto reveal">Será un placer compartir esta noche especial contigo. Agradecemos tu puntualidad para disfrutar juntos de cada momento de la celebración.</p>
+</section>
+<!-- FOTO 4: después de la puntualidad -->
+<figure class="foto-integrada vertical reveal" data-foto="3">
+  <img src="assets/galeria-4.jpg" alt="Fotografía de Nelly" loading="lazy">
+</figure>
+<!-- ============ 6. REGALO ============ -->
+<section class="seccion regalo">
+  <a class="regalo-enlace"
+     href="https://www.yape.com.pe/"
+     target="_blank"
+     rel="noopener"
+     aria-label="Abrir Yape para enviar un regalo a Nelly">
+
+    <svg class="icono-regalo" viewBox="0 0 100 100"
+         xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <g fill="none" stroke="currentColor" stroke-width="3.5"
+         stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 43h68v43H16z"/>
+        <path d="M11 31h78v15H11z"/>
+        <path d="M50 31v55"/>
+        <path d="M50 31C20 31 17 7 32 8c12 0 18 13 18 23Z"/>
+        <path d="M50 31C80 31 83 7 68 8c-12 0-18 13-18 23Z"/>
+      </g>
+    </svg>
+
+    <span class="regalo-titulo">Un detalle para Nelly</span>
+    <span class="regalo-numero">Yape: 921 248 795</span>
+  </a>
+</section>
+<!-- ============ 6. GALERÍA (se oculta sola si no hay fotos) ============ -->
+
+
+<!-- ============ 7. DESPEDIDA ============ -->
+<section class="seccion despedida">
+  <!-- FOTO FINAL: reemplaza assets/nelly-final.jpg (ruta en CONFIG de script.js). Si no existe, se muestra la frase de despedida -->
+  <figure class="foto-final reveal" id="fotoFinal" hidden><img src="" alt="Nelly" id="fotoDespedida"></figure>
+  <p class="serif texto reveal" id="textoDespedida">Será una alegría compartir esta noche contigo.</p>
+  <p class="cursiva firma reveal">Con cariño, Nelly</p>
+</section>
+
+</main>
+
+<!-- Música de fondo: sin reproductor visible. Reemplaza assets/musica.mp3 -->
+<audio id="musica" src="assets/musica.mp3" loop preload="auto"></audio>
+<script src="script.js"></script>
+</body>
+</html>
