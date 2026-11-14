@@ -3,7 +3,7 @@
    ============================================================ */
 const CONFIG = {
   mapa: "https://maps.app.goo.gl/8eTKWrLWoKEeuajY7?g_st=ac",            // enlace de Google Maps
-  whatsapp: "51966254191",                                             // número con código de país, sin + ni espacios
+  whatsapp: "51921248795",                                             // número con código de país, sin + ni espacios
   mensajeWhatsapp: "Hola, Nelly. Muchas gracias por la invitación. Confirmo mi asistencia a tu celebración de cumpleaños.",
   volumen: 0.6,                                                        // música: 0 a 1
   // GALERÍA: guarda tus fotos en assets/ con estos nombres (o añade líneas). Las que no existan se omiten.
